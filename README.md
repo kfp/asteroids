@@ -3,6 +3,13 @@
 An Asteroids clone in js/canvas from  `https://github.com/jsocol/asteroids`. Arrow keys turn and spacebar shoots.
 
 
+## Loading the Game in the Editor
+The code is loaded in this URL: https://jsfiddle.net/longlivegd/gqpc7svL/1/. You can start the game by hitting `ctrl+enter` if it does not start automatically. You can move by using the arrow keys and fire by hitting spacebar. 
+
+You can make changes to the code and then hit `ctrl+enter` to restart the game with your coding changes. If you want to save your changes you can hit `ctrl+s` and you will get a new URL. 
+
+If at any time you want to go back to the original code you can always go back to https://jsfiddle.net/longlivegd/gqpc7svL/1/.
+
 ## App Structure
 The app is broken into three parts, HTML, CSS and Javascript(JS). Each part serves a different purpose.
 
@@ -55,9 +62,6 @@ Asteroids.collision = function (a, b) {
 }
 ```
 The function is defined by `funciton (a, b)` and includes all the statements between the `{` and `}` characters. a and b are arguments which are variables that are passed into the function. The function is called elsewhere with `Asteroids.collision(game.player, asteroids[i]))`. This checks if the player has collided with a particular asteroid. 
-
-## Loading the Game in the Editor
-The code is loaded in this URL: https://jsfiddle.net/longlivegd/gqpc7svL/1/. You can start the game by hitting `ctrl+enter`. You can move by using the arrow keys and fire by hitting spacebar. You can make changes to the code and then hit `ctrl+enter` to restart the game with your coding changes. If you want to save your changes you can hit `ctrl+s` and you will get a new URL. If you want to go back to the original code you can always go back to https://jsfiddle.net/longlivegd/gqpc7svL/1/.
 
 ## Challenges:
 ### Beginner
