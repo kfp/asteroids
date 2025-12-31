@@ -1,0 +1,7 @@
+---
+name: Asteroids
+description: A simple Asteroids game written in Javascript
+authors:
+  - jsocol/asteroids
+normalize_css: no
+load_type: d
