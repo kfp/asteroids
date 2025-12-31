@@ -31,9 +31,30 @@ Variables have types as well. These variables are numbers. Variables can also be
 - other types
 
 #### Statements
-Statements `do stuff`.  ...
+Statements `do stuff`.  Setting a variable is a statement, calling a `function` is a statement. In Javascript statements usually end in a `;` character. 
 
 #### Functions
+Functions are `groups of statements` organized logically around a particular task. You might have a funciton that sets up the initial game or draws the end game screen, moves the ship around or fires the bullets. This funciton is used to determine if the ship and asteroids have collided:
+
+```
+Asteroids.collision = function (a, b) {
+    // if a.getPosition() inside b.getBounds?
+    var a_pos = a.getPosition(),
+        b_pos = b.getPosition();
+
+    function sq (x) {
+        return Math.pow(x, 2);
+    }
+
+    var distance = Math.sqrt(sq(a_pos[0] - b_pos[0]) +
+                             sq(a_pos[1] - b_pos[1]));
+
+    if (distance <= a.getRadius() + b.getRadius())
+        return true;
+    return false;
+}
+```
+The function is defined by `funciton (a, b)` and includes all the statements between the `{` and `}` characters. a and b are arguments which are variables that are passed into the function. The function is called elsewhere with `Asteroids.collision(game.player, asteroids[i]))`. This checks if the player has collided with a particular asteroid. 
 
 ## Loading the Game in the Editor
 ...
